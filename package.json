@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "https://github.com/cloverink/hello-react.git",
   "author": "cloverink <cloverink@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "webpack": "^4.6.0"
+  }
 }
