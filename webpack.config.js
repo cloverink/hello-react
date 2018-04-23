@@ -9,7 +9,16 @@ var APP_DIR = path.resolve(__dirname, 'src/client/app');
 
 var config = {
 
-  // Starting point of app
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?/,
+        include: APP_DIR,
+        loader: 'babel'
+      }
+    ]
+  },
+  
   entry: APP_DIR + '/index.jsx',
 
   // Instructions for Webpack to output bundle.js after bundling process
